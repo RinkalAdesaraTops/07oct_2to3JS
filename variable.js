@@ -14,7 +14,6 @@
 // var let const
 var a=25 //Redeclare & reassign
 document.write('<br> A is '+a)
-
 var a ="Hello"
 document.write('<br> A is '+a)
 
