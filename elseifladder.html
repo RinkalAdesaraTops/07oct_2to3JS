@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Else If Ladder Example</h3>
+    <div id="demo"></div>
+    <script>
+        //elseif ladder
+        //Wap to check no is +ve,-ve or zero
+        let no = prompt("Enter no:")
+        let n = parseInt(no)
+        if(no >0){
+            document.write('<br> No is +ve')
+        } else if(no<0){
+            document.write('<br> No is -ve')
+        } else {
+            document.write('<br> No is zero')
+        }
+
+        //wap to find max from 3
+        let a = parseInt(prompt("Enter a:"))
+        let b = parseInt(prompt("Enter b:"))
+        let c = parseInt(prompt("Enter c:"))
+
+        if(a>b && a>c){
+            document.write('<br> A is max')            
+        } else if(b>c){
+            document.write('<br> B is max')            
+        } else {
+            document.write('<br> C is max')            
+            
+        }
+
+    </script>
+</body>
+</html>
