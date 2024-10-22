@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find out max from 3 varialbe using nested if
+        let a = parseInt(prompt("Enter a:"))
+        let b = parseInt(prompt("Enter b:"))
+        let c = parseInt(prompt("Enter c:"))
+        if(a>b){ //a=35 b=10 c=350
+            if(a>c){ //35>350
+                document.write('<br> A is maximum')               
+            } else {
+                document.write('<br> C is maximum')                
+            }
+        } else {
+            if(b>c){
+                document.write('<br> B is maximum')
+            } else {
+                document.write('<br> C is maximum')
+            }
+        }
+    </script>
+</body>
+</html>
