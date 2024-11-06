@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Hi Hello@Hi"
+        document.write('<br> String length is '+str.length)
+        document.write('<br> String Uppercase is '+str.toUpperCase())
+        document.write('<br> String Lowercase is '+str.toLowerCase())
+        let str2 = "How are you?"
+        let merge_str = str.concat("    @@@@    ",str2,"jhsdfg sdhgfhjsgf ")
+        document.write('<br> String merge is '+merge_str)
+        let res = str.slice(2)
+        document.write('<br>Slice function --  '+res)
+        res = str.slice(2,10)
+        document.write('<br>Slice function --  '+res)
+        res = str.slice(-8)
+        document.write('<br>Slice function --  '+res)
+        res = str.slice(-8,-2)
+        document.write('<br>Slice function --  '+res)
+
+        res = str.substr(2,7)
+        document.write('<br>Substr function --  '+res)
+
+        let new_str = "Hi dsgfjhsgf hi test abc xyz hi jshfg hi"
+        document.write('<br> Original String is '+new_str)
+        
+        // let rp_str = new_str.replace("hi","HELLO")
+        // let rp_str = new_str.replace(/hi/gi,"HELLO") //g global -a;; i-incensitive
+        // document.write('<br> Replace String is '+rp_str)
+        let rp_str = new_str.replaceAll(/hi/gi,"HELLO") //g global -a;; i-incensitive
+        document.write('<br> Replace String is '+rp_str)
+
+        
+    </script>
+</body>
+</html>
