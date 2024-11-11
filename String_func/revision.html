@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Hi hello jdkfhg djfkhgkjdfg hello jdhgsjdh Hello"
+        document.write('<br> Length is '+str.length)
+        document.write('<br> Uppercase is '+str.toUpperCase())
+        document.write('<br> Lowercase is '+str.toLowerCase())
+        let str2 = str.slice(4) //position/index- 0
+        document.write('<br> Slice is '+str2)
+        str2 = str.slice(4,13) //position/index- 0
+        document.write('<br> Slice is '+str2)
+        str2 = str.slice(-6) //position/index- 0
+        document.write('<br> Slice is---- '+str2)
+        str2 = str.slice(-11,-2) //position/index- 0
+        document.write('<br> Slice is---- '+str2)
+        let repstr = str.replace(/Hello/gi,"TEST") //case sensitive
+        // let repstr = str.replace("Hello","TEST") //case sensitive
+        document.write('<br> Original str is--- '+str)
+        document.write('<br> Replace str is=== '+repstr)
+        repstr = str.replaceAll(/hello/gi,"TEST") //case sensitive
+        document.write('<br> Original str is--- '+str)
+        document.write('<br> Replace str is=== '+repstr)
+        let strnew = str.charAt(5)
+        document.write('<br> char is  '+strnew)
+        strnew = str.charCodeAt(5) //ASCII table
+        document.write('<br> char is  '+strnew)
+        let newstr=str.concat(strnew,"djfkgh#74856","74537&&%%^^")
+        document.write('<br> Merge string is '+newstr)
+        let pr1 ="           kjddkjfg dfkjgdjg jkdfhgjfd            "
+        document.write('<br> String is '+pr1.length)
+        document.write('<br> String is '+pr1.trim().length)
+        document.write('<br> String is '+pr1.trimStart().length)
+        document.write('<br> String is '+pr1.trimEnd().length)
+        let no1 = "256"
+        //padStart,padEnd
+        let no2 = no1.padStart(6,"RS")
+        document.write('<br> pad start is '+no2)
+        no2 = no1.padEnd(7,".00")
+        document.write('<br> pad start is '+no2)
+        //substring- slice
+        //substr
+        let str23 = str.substr(3,13)
+        document.write('<br> Sub str is '+str23)
+
+    </script>
+</body>
+</html>
