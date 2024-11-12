@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array - collection of data
+        let arr=[10,20,30,40,50] //elements = 5
+        // document.write('<br> Array element is '+arr[0])
+        // document.write('<br> Array element is '+arr[1])
+        // document.write('<br> Array element is '+arr[2])
+        // for(let i=0;i<arr.length;i++){
+        //     document.write('<br>'+i+'position -  Element is '+arr[i])          
+        // }
+        //for...in & for..of
+        for(var x of arr){
+            document.write('<br> '+x)    
+        }
+        document.write('<br> '+arr)
+        arr.push(65) //last position - element add
+        document.write('<br> '+arr)
+        arr.push(75) //last position - element add
+        document.write('<br> '+arr)
+        arr.pop() //last position - element remove
+        document.write('<br> '+arr)
+        arr.unshift(111) //first position element add
+        document.write('<br> '+arr)
+        arr.unshift(102) //first position element add
+        document.write('<br> '+arr)
+        arr.shift()
+        document.write('<br> '+arr)
+        arr[3] = 500
+        document.write('<br> '+arr)
+        //splice - positionwise data add & remove
+        arr.splice(3,2,22,33,44,55,66,77,88)
+        document.write('<br> '+arr)
+        let new_arr = arr.slice(4,8)
+        document.write('<br> '+new_arr)
+
+        let strarr = ["xyz","abc","fgh","zxs","pqr"]
+        document.write('<br> Array is '+strarr)
+        document.write('<br> Array is '+strarr.sort())
+        document.write('<br> Array is '+strarr.reverse())
+
+        let num_arr = [23,34,45,4,2,7,67,78,90]
+        document.write('<br> Array is '+num_arr.sort(function(a,b){
+            return b-a //23-34 = -11 4-2=2
+        }))
+        
+        document.write('<br> '+num_arr.reverse())
+        document.write('<br> ')
+        document.write('<br> ')
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>
