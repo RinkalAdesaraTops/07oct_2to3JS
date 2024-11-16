@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" value="Test">
+    <div id="demo">hello</div>
+    <p class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repellendus autem, cumque consequatur minima officia iusto dolores numquam! Necessitatibus exercitationem accusantium sequi explicabo sapiente vitae doloribus, harum magnam commodi in.</p>
+    <p class="box">hello hi</p>
+    <p class="box">jkgdfjkgh dkjfhgkdfjgh</p>
+    <p class="box">jkgdfjkgh testt dkjfhgkdfjgh</p>
+    <script>
+        //set value
+        // document.getElementById("username").value="ABCd"
+        let a = document.getElementById("username").value
+        console.log("textbox value is "+a);
+        document.getElementById("demo").style.color = "blue" 
+        document.getElementById("demo").style.backgroundColor = "yellowgreen" 
+//getElementsByTagName
+//getElementsByName
+//getElementsByClassName
+        let pr = document.getElementsByName("username")
+        console.log(pr);
+        
+        for(let i=0;i<pr.length;i++){
+            if((i+1)%2==0){
+                pr[i].style.color = "brown"
+
+            } else {
+                pr[i].style.color = "pink"
+
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
