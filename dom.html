@@ -6,15 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="username" id="username" value="Test">
+    <input type="text" name="username" id="username" value="Test1234">
     <div id="demo">hello</div>
     <p class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repellendus autem, cumque consequatur minima officia iusto dolores numquam! Necessitatibus exercitationem accusantium sequi explicabo sapiente vitae doloribus, harum magnam commodi in.</p>
     <p class="box">hello hi</p>
     <p class="box">jkgdfjkgh dkjfhgkdfjgh</p>
     <p class="box">jkgdfjkgh testt dkjfhgkdfjgh</p>
+    <img src="" alt="" height="100px" width="300px" id="domimg">
     <script>
         //set value
-        // document.getElementById("username").value="ABCd"
+        document.getElementById("username").value="ABCd"
+       //get value
         let a = document.getElementById("username").value
         console.log("textbox value is "+a);
         document.getElementById("demo").style.color = "blue" 
@@ -34,7 +36,8 @@
 
             }
         }
-        
+        document.getElementById("domimg").src = "https://media.licdn.com/dms/image/v2/D4E12AQEwM6eSxgooHA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1691686104974?e=2147483647&v=beta&t=4nOf6MMm8lMI2RrP8q5c6hgm0I2bqNHFYJNox2wde-A"
+        document.getElementById("domimg").style.height = "300px"
         
     </script>
 </body>
