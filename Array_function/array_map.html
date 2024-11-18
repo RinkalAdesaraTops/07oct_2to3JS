@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5]
+        // let res = a.map((i)=>{
+        //     return i*2
+        // })
+        let res = a.map((i)=>i*2)
+        console.log(res);
+        
+        // res = a.forEach((i)=>{
+        //    return i*2
+        // }) 
+        // console.log(res);
+
+        let arr2 = [10,20,33,44,10,25]
+        //filter function
+        let ans = arr2.filter((i)=>i==20)
+        console.log(ans);
+        if(ans.length > 0){
+            console.log("Data found");          
+        } else {
+            console.log("No Data found");          
+        }
+//reduce == 1 2 3 4 5
+        let res1 = a.reduceRight((total,i)=>{
+            console.log("Total - "+total);
+            console.log("i is "+i);
+                return total+i //total=1 i=2 total=3 i=3 i=4 i=5 
+        },125)
+console.log("Total is "+res1);
+
+    </script>
+</body>
+</html>
