@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="ord" id="ord">
+        <option value="">--Select order--</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Decending</option>
+    </select>
+    <br><br><br>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="alluser"></tbody>
+    </table>
+
+    <script>
+        let a = 10
+        let arr = ["abc",25,"dfgdf",25000]
+        let obj = {
+            "name":"abc",
+            "age":25,
+            "salary":25000
+        }
+        console.log("Name is "+obj['name']); 
+        console.log("Age is "+obj.age);
+        for(var x in obj){
+        //    document.write('<br>'+x+' is '+obj[x])           
+        }
+        
+        let txt = ''
+        //array of object
+        let user = [
+            {
+                "id":101,
+                "name":"Test",
+                "age":26
+            },
+            {
+                "id":102,
+                "name":"Abc",
+                "age":24
+            },
+            {
+                "id":103,
+                "name":"Pqr",
+                "age":28
+            },
+            {
+                "id":104,
+                "name":"Afdgdg",
+                "age":18
+            },
+            {
+                "id":105,
+                "name":"pqrt",
+                "age":24
+            }
+        ]
+        let res = user.map((i)=>{
+            //template literal
+            txt += `<tr>
+                        <td>${i.id}</td>
+                        <td>${i.name}</td>
+                        <td>${i.age}</td>
+                    </tr>`
+            // txt += "<tr>"
+            // txt += "<td>"+i.id+"</td>"
+            // txt += "<td>"+i.name+"</td>"
+            // txt += "<td>"+i.age+"</td>"
+            // txt +="</tr>"            
+        })
+        document.getElementById("alluser").innerHTML = txt
+    </script>
+</body>
+</html>
