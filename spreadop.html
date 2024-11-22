@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ["abc","xyz","jsgf","tyt","pqr"]
+        const arr2 = ["qwe","jkl"]
+        const newarr = [...arr,...arr2] //merging
+        console.log(newarr);
+        //destructuring -- ...z - rest of operator
+        const [x,y,c,...z] = arr
+        console.log("X is "+x);
+        console.log("Y is "+y);
+        console.log(c);
+        console.log(z);
+
+        const emp = {
+            "name":"test",
+            "age":25,
+            "salary":45000
+        }
+        const {salary,age} = emp
+        console.log("AGe is "+age);
+        console.log("Salary is "+salary);
+
+        //arr[0]
+        //for loop
+        //for in forof
+        //ES6  - spread operator - ...
+    </script>
+</body>
+</html>
