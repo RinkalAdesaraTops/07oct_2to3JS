@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = [
+            {
+                id:101,
+                name:"test",
+                age:25
+            },
+            {
+                id:102,
+                name:"pqr",
+                age:20
+            },
+            {
+                id:103,
+                name:"abc",
+                age:18
+            }
+        ]
+        localStorage.setItem("userinfo",JSON.stringify(user))
+        let a = JSON.parse(localStorage.getItem("userinfo"))
+        console.log(a);
+        
+    </script>
+</body>
+</html>

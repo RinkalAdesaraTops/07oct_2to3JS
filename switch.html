@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- switch case -->
+    <!-- else if ladder -->
+     <script>
+        //1-addition 2-minus 3-multiplication 4-division invalid choice
+        let choice = parseInt(prompt("ENter choice:"))
+        if(choice >=1 && choice<=4){
+            let a = parseInt(prompt("Enter a:"))
+            let b = parseInt(prompt("Enter b:"))
+        }
+        let c;
+        switch(choice){
+            case 1: c=a+b
+                    document.write('<br> Addition is '+c)
+                    break
+            case 2: c=a-b
+                    document.write('<br> Minus is '+c)
+                    break
+            case 3: c=a*b
+                    document.write('<br> Multiplication is '+c)
+                    break
+            case 4: c=a/b
+                    document.write('<br> Division is '+c)
+                    break
+            default:document.write('<br> Invalid Choice...')
+                    break          
+        }
+
+     </script>
+</body>
+</html>
