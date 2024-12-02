@@ -33,6 +33,7 @@ const disp = ()=>{
                     <td>${i.age}</td>
                     <td>${i.gender}</td>
                     <td>
+                        <button onclick="editData(${i.id})">Edit</button>
                         <button onclick="delData(${i.id})">Delete</button>
                     </td>
                 </tr>`
@@ -52,6 +53,25 @@ const delData = (id)=>{
             i.id = j++
             return i
     })
+    localStorage.setItem("userdata",JSON.stringify(finaldata))
+    disp()
+}
+const editData = (id)=>{
+    let alldata = JSON.parse(localStorage.getItem('userdata'))
+    
+    let res = alldata.find((i)=>{
+            return i.id == id
+    })
+    $("#age").val(res.age)
+    $("#name").val(res.name)
+    let gender = res.gender
+    if(gender == "male"){
+        $("#gender1").attr("checked","true")
+    } else {
+        $("#gender2").attr("checked","true")
+
+    }
+    // let a = $("input[type='radio']").attr("checked")
     localStorage.setItem("userdata",JSON.stringify(finaldata))
     disp()
 }
