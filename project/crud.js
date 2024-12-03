@@ -6,17 +6,35 @@ const saveData = ()=>{
     let name = document.getElementById("name").value
     // let age = document.frm.age.value
     let age = $("#age").val()
+    let id = $("#id").val()
     let gender = $("input[type='radio']:checked").val()
-    let obj = {
-        id:len,
-        name:name,
-        age:age,
-        gender:gender
+    if(id == ''){
+        //insert
+        let obj = {
+            id:len,
+            name:name,
+            age:age,
+            gender:gender
+        }
+        // console.log(obj);
+        userdata.push(obj)
+    } else {
+        //update
+        let updatedData = alldata.map((i)=>{
+            if(i.id == id){
+                i.name = name
+                i.age = age
+                i.gender = gender
+            }
+            return i
+        })
+        userdata = updatedData
     }
-    // console.log(obj);
-    userdata.push(obj)
+    
     localStorage.setItem("userdata",JSON.stringify(userdata))
     document.frm.reset()
+    $("#gender1").removeAttr("checked")
+    $("#gender2").removeAttr("checked")
     disp()
 }
 const disp = ()=>{
@@ -57,21 +75,22 @@ const delData = (id)=>{
     disp()
 }
 const editData = (id)=>{
-    let alldata = JSON.parse(localStorage.getItem('userdata'))
-    
+    $("#gender1").removeAttr("checked")
+    $("#gender2").removeAttr("checked")
+    let alldata = JSON.parse(localStorage.getItem('userdata'))   
     let res = alldata.find((i)=>{
             return i.id == id
     })
     $("#age").val(res.age)
     $("#name").val(res.name)
+    $("#id").val(res.id)
     let gender = res.gender
     if(gender == "male"){
         $("#gender1").attr("checked","true")
     } else {
         $("#gender2").attr("checked","true")
-
     }
-    // let a = $("input[type='radio']").attr("checked")
+    //let a = $("input[type='radio']").attr("checked")
     localStorage.setItem("userdata",JSON.stringify(finaldata))
     disp()
 }
