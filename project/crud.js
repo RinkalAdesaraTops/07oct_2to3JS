@@ -18,6 +18,7 @@ const saveData = ()=>{
         }
         // console.log(obj);
         userdata.push(obj)
+   
     } else {
         //update
         let updatedData = alldata.map((i)=>{
