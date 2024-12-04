@@ -30,7 +30,6 @@ const saveData = ()=>{
         })
         userdata = updatedData
     }
-    
     localStorage.setItem("userdata",JSON.stringify(userdata))
     document.frm.reset()
     $("#gender1").removeAttr("checked")
