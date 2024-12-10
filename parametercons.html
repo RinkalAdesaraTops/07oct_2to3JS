@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            constructor(p,q){
+                this.a = p
+                this.b = q
+            }
+            multiplication(){
+                return this.a*this.b
+            }
+        }
+        let obj = new user(10,25)
+        document.write('<br> Multiplication is '+obj.multiplication())
+        // create one class employee whose members are name,age & salary
+        // display username,age & salary
+        class employee{
+            constructor(a,b,c){
+                this.name = a
+                this.age = b
+                this.salary = c
+            }
+            display(){
+                document.write('<br> Name is '+this.name)
+                document.write('<br> age is '+this.age)
+                document.write('<br> salary is '+this.salary)         
+            }
+        }
+        let newobj = new employee("test",25,25000)
+        newobj.display()
+    </script> 
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //inheritance--reusability
+        //function overriding -- polymorphism
+
+        class parent{ //base class /super class
+            constructor(){
+                console.log("parent class constructor called..");             
+            }
+            subdisp(){
+                console.log("display function called.");            
+            }
+        }
+        class child extends parent{ //derived class/subclass
+            constructor(){
+                super()
+                console.log("child class constructor called..");             
+            }
+            disp(){
+                super.disp()
+                console.log("sub display called..");                        
+            }
+        }
+        let obj = new child()
+        obj.disp()
+        // obj.subdisp()
+        //data abstraction - data hiding
+        // encapsulation -- wrapping up of data into single unit
+
+        //4 principle of oop
+        /*
+        1)class & object
+        2)abstraction & encapsulation
+        3)inheritance
+        4)Polymorphism
+
+        */
+    </script>
+</body>
+</html>

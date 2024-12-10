@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object oriented programming
+        class emp{
+            // constructor automatically called when object is created
+            // default constructor
+            constructor(){ //special member function
+                console.log("constructor called..");
+                this.a = 25
+                this.b = 35
+            }
+            add(){
+                document.write('<br> Addition is '+(this.a+this.b))             
+            }
+            //this 
+            //member variable
+            //member function
+        }
+        let obj = new emp();
+        obj.add()
+    </script>
+</body>
+</html>
