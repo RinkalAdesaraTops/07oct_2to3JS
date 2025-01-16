@@ -1,0 +1,5 @@
+//static website
+//dynamic 
+//js library -- react js
+//faster compare to js
+//Uses Hooks
